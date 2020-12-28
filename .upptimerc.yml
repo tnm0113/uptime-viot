@@ -12,8 +12,10 @@ sites:
     url: https://news.ycombinator.com
   - name: VHT IoT Frontend
     url: https://iotcloud.com.vn:4438/
+    __dangerous__disable_verify_peer: true
   - name: VHT IoT API
     url: https://api.iotcloud.com.vn:4438/
+    __dangerous__disable_verify_peer: true
 
 status-website:
   # Add your custom domain below, or remove the next line if you don't have a domain
