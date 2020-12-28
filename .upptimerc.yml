@@ -14,8 +14,12 @@ sites:
     url: https://iotcloud.com.vn:4438/
     __dangerous__disable_verify_peer: true
   - name: VHT IoT API
-    url: https://api.iotcloud.com.vn:4438/
+    url: https://api.iotcloud.com.vn:4438/token
+    method: POST
     __dangerous__disable_verify_peer: true
+    header:
+      - "Content-Type: application/x-www-form-urlencoded"
+    body: '{ "grant_type": "client_credentials", "client_id": $CLIENT_ID, "client_secret": $CLIENT_SECRET }'
 
 status-website:
   # Add your custom domain below, or remove the next line if you don't have a domain
